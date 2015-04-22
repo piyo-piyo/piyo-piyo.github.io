@@ -24,21 +24,21 @@ body
   line-height: 1em
   position: relative
   height: 100%
-  background: #ffd200 image-url('logo.png') no-repeat center calc(50% - 60px)
-
-h1
-  display: none
-footer
-  position: absolute
-  bottom: 40px
-  width: 100%
-  .icons
-    width: 80px
-    margin: 0 auto
-    .icon
-      display: block
-      float: left
-      &.facebook
-        @include bgimage(40px, 40px, image-url('facebook.png'))
-      &.twitter
-        @include bgimage(40px, 40px, image-url('twitter.png'))
+.wrap
+  background: #ffd200 image-url('logo.png') no-repeat center calc(50% - 40px)
+  h1
+    display: none
+  footer
+    position: absolute
+    bottom: 40px
+    width: 100%
+    .icons
+      width: 80px
+      margin: 0 auto
+      .icon
+        display: block
+        float: left
+        &.facebook
+          @include bgimage(40px, 40px, image-url('facebook.png'))
+        &.twitter
+          @include bgimage(40px, 40px, image-url('twitter.png'))
